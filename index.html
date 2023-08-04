@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HomePage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar" id="navbar">
+        <div class="nav-menu">
+          <button class="hamburger" onclick="toggleHamburger()">
+            <i class="fa fa-bars"></i>
+          </button>
+          <a href="#home" class="nav-items">Home</a>
+          <a href="#order" class="nav-items" href="order.html">Order</a>
+          <a href="#food" class="nav-items">Food</a>
+          <a href="#resturant" class="nav-items">Restaurant</a>
+          <a href="#testimonals" class="nav-items">Testimonials</a>
+          <a href="#contact-us" class="nav-items">Contact Us</a>
+        </div>
+        <div class="utility-menu">
+          <a href="#get-in-touch">
+            <span class="call-icon"> <i class="fa fa-phone"></i> </span>
+          </a>
+          <a href="#cart"><i class="fa fa-shopping-cart cart-icon"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="banner-wrapper">
+        <div class="banner-text-container">
+          <h1 class="banner-text-heading">LOREM IPSUM</h1>
+          <p class="banner-text-description">
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+        </div>
+        <img src="img1.jpg" class="banner-image" />
+      </div>
+
+      <div class="container">
+        <div class="order-text">Order Now</div>
+        <div class="card-container">
+          <div class="card">
+            <img src="img4.jpg" class="card-image" />
+            <div class="card-content-wrapper">
+              <h1 class="card-heading">Burger</h1>
+              <h3 class="card-description">
+                Lorem Ipsum has been the industry's standard dummy text
+              </h3>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img2.jpg" class="card-image" />
+            <div class="card-content-wrapper">
+              <h1 class="card-heading">Pizza</h1>
+              <h3 class="card-description">
+                Lorem Ipsum has been the industry's standard dummy text
+              </h3>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img3.jpg" class="card-image" />
+            <div class="card-content-wrapper">
+              <h1 class="card-heading">Pasta</h1>
+              <h3 class="card-description">
+                Lorem Ipsum has been the industry's standard dummy text
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <button class="order-button">Order</button>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+  <script>
+    function toggleHamburger() {
+      const navbar = document.querySelector("#navbar");
+      navbar.classList.toggle("open");
+    }
+  </script>
+</html>
